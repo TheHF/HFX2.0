@@ -62,7 +62,7 @@ class ConvoFilters extends Feature {
             });
             // Flips
             if (hideFlips) {
-              if ($(message).text().includes("/flip")) {
+              if ($(message).text().startsWith("/flip ")) {
                 $(node).hide();
               }
             }
